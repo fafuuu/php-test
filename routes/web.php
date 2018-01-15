@@ -15,5 +15,7 @@ Route::get('/', 'BookController@index');
 
 
 Route::get('/web', function () {
-    return view('welcome');
+
+    return App\Book::all();
+    //return view('welcome');
 });
